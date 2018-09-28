@@ -1041,8 +1041,7 @@ form#commentform textarea {
 	border: solid 0.5px #d0d0d0;
 	padding: 10px;
 	border-radius:5px;
-	padding-left: 25px;
-}
+	padding-left: 25px;}
 .le h4{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
@@ -1072,11 +1071,15 @@ input {
   	border: solid 0.5px #d0d0d0;
 }
 .result{
+	margin-bottom:15px;
 	border: solid 0.5px #d0d0d0;
 	padding: 20px;
 	border-radius: 10px;
 }
 .result h4{
+	color: #1295c9;
+}
+.result h2{
 	color: #1295c9;
 }
 .count{
@@ -1115,4 +1118,11 @@ input {
 	font-size: 30px;
 	text-align: center;
 	color: #00bcd4;
+}
+/*button for apply now*/
+.m1{
+	width: 250px;
+	height: 60px;
+	margin-left: 36%;
+
 }

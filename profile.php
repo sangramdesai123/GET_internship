@@ -7,6 +7,7 @@
 
 		<section id="search" class="site-padding">
 		<h3 class="container count">Application Status for Internship</h3>
+		<h4 class="container count">Welcome <?php echo $_SESSION['u_name'] ?> !</h4>
 			<div class="container">
 				<div class="row">
 				<!--Filter-->
@@ -17,7 +18,7 @@
 						    <th>Company</th>
 						    <th>Applicaion Status</th>
 						    <th>Contact</th>
-						    <th>Country</th>
+						    <th>City</th>
 						  </tr>
 						  <tr>
 						  	<td>16/02/2016</td>

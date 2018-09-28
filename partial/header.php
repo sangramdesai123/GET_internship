@@ -167,7 +167,7 @@
 										if(isset($_SESSION['u_name']))
 										{
 											$user=$_SESSION['u_name'];
-										echo '<li><a href="./profile.php" ><i class="fa fa-user"></i>  User Name</a></li>
+										echo '<li><a href="./profile.php" ><i class="fa fa-user"></i>'.$_SESSION['u_name'].'</a></li>
 										<li><a href="./model/logout.php" class="logbtn">Log Out</a></li>';
 
 										}
