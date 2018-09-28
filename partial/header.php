@@ -94,6 +94,13 @@
 		function closeForm() {
 		    document.getElementById("myForm").style.display = "none";
 		}
+		function openReg() {
+		    document.getElementById("myReg").style.display = "block";
+		}
+
+		function closeReg() {
+		    document.getElementById("myReg").style.display = "none";
+		}
 		</script>
     </head>
     <body>
@@ -122,7 +129,8 @@
 							  <form action="./model/userlogin.php" method="GET" class="form-container">
 							    <h1 class="login">Login</h1>
 							    <hr>
-							    <label for="user"><b>User Name</b></label>
+
+			               	    <label for="user"><b>User Name</b></label>
 							    <input type="text" placeholder="Enter UserName" name="uname" required>
 
 							    <label for="psw"><b>Password</b></label>
@@ -133,6 +141,21 @@
 							  </form>
 							</div>
 							<!--log in form-->
+
+<!------------------------------------------------>
+
+<!------------------------------------------------>
+							<!--Register in form-->
+							<div class="form-popup" id="myReg" >
+							  <form action="regtype.php" method="GET" class="form-container">
+							    <h1 class="login">Select Form</h1>
+							    <hr>
+							    <button type="submit" class="btn" name="usersubmit">New User</button>
+							    <button type="submit" class="btn" name="compsubmit">New Company</button>
+							    <button type="button" class="btn cancel" onclick="closeReg()">Close</button>
+							  </form>
+							</div>
+							<!--Register in form-->
 
 <!------------------------------------------------>
 							<div class="navbar-collapse collapse">
@@ -150,7 +173,7 @@
 										}
 										else{
 										echo '<li><a href="#" onclick="openForm()" class="logbtn">Log In</a></li>
-										<li><a href="register.php" class="logbtn">Register</a></li>';
+										<li><a href="#" onclick="openReg()" class="logbtn">Register</a></li>';
 										}
 									?>
 

@@ -1,3 +1,4 @@
+<!--new  company registeration-->
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,21 +84,23 @@ button:hover {
 </style>
 <body>
 
-<form id="regForm" action="../internship/model/usersignup.php" method="GET">
-  <h1>Register:</h1>
+<form id="regForm" action="../internship/model/compsignup.php" method="GET">
+  <h1> comp Register:</h1>
   <!-- One "tab" for each step in the form: -->
-  <div class="tab">Name:<small>Don't Add Spaces inbetween</small>
-    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-    <p><input placeholder="College name..." oninput="this.className = ''" name="clgname"></p>
-  </div>
   <div class="tab">Contact Info:<small>Don't Add Spaces inbetween</small>
+    <p><input placeholder="First name..." oninput="this.className = ''" name="cname"></p>
     <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-    <p><input placeholder="Phone..." oninput="this.className = ''" name="mobile"></p>   
-    <p><input placeholder="City..." oninput="this.className = ''" name="city"></p>
+    <p><input placeholder="Phone..." oninput="this.className = ''" name="mobile"></p>
+    <p><input placeholder="Location name..." oninput="this.className = ''" name="location"></p>
+  </div>
+  <div class="tab">Intership Info:<small>Don't Add Spaces inbetween</small>
+    <p><input placeholder="Type ex.web..." oninput="this.className = ''" name="jobtype"></p>
+    <p><input placeholder="Duration in Months..." oninput="this.className = ''" name="duration"></p>
+    <p><input placeholder="Stipend..." oninput="this.className = ''" name="stipend"></p>
   </div>
   
   <div class="tab">Login Info:<small>Don't Add Spaces inbetween</small>
-    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+    <p><input placeholder="Username..." oninput="this.className = ''" name="c_name"></p>
     <p><input placeholder="Password..." oninput="this.className = ''" name="pwd" type="password"></p>
   </div>
   <div style="overflow:auto;">
