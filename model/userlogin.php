@@ -38,6 +38,7 @@ if(isset($_GET['submit']))
 					$_SESSION['u_mobile']=$row['mobile'];
 					$_SESSION['u_email']=$row['user_email'];
 					$_SESSION['u_city']=$row['city'];
+					$_SESSION['c_name']="mumbai";
 					header("Location:../index.php?login=success");
 					exit();
 				}
